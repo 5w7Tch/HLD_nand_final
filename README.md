@@ -70,29 +70,6 @@ a,b; out
 1,1; 1
 ```
 
-## Built-in Chips
-
-The following chips are built-in and don't require HDL files:
-
-| Chip | Inputs | Outputs | Logic |
-|------|---------|----------|--------|
-| Nand | a, b | out | !(a & b) |
-| Not | in | out | !in |
-| And | a, b | out | a & b |
-| Or | a, b | out | a \| b |
-
-## Project Structure
-
-```
-hdl_parser/
-├── __init__.py       # Package initialization
-├── __main__.py       # Module entry point
-├── models.py         # Data models
-├── parser.py         # HDL parsing logic
-├── simulator.py      # Chip simulation
-├── test_runner.py    # Test execution
-└── cli.py           # Command-line interface
-```
 
 ## Development
 
@@ -101,38 +78,9 @@ hdl_parser/
 ```bash
 # Run unit tests
 python -m pytest tests/
+pytest -v
 
 # Run with coverage
 python -m pytest --cov=hdl_parser tests/
 ```
 
-### Code Style
-
-The project uses standard Python formatting. Run linting with:
-
-```bash
-# Check code style
-flake8 hdl_parser/
-
-# Format code
-black hdl_parser/
-```
-
-## Limitations
-
-- Only single-bit inputs/outputs are supported
-- No support for multi-bit buses or sub-buses
-- Sequential chips (with clocks/memory) are not supported
-- Assumes all HDL files are syntactically correct
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
