@@ -5,7 +5,7 @@
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/hdl-parser.git
+git https://github.com/azhgh22/HDL_Simulator.git
 ```
 
 ## Quick Start
