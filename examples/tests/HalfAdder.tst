@@ -1,0 +1,6 @@
+// Half Adder test file
+a,b; sum,carry
+0,0; 0,0
+0,1; 1,0
+1,0; 1,0
+1,1; 0,1
