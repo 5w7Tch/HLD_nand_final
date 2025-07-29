@@ -1,15 +1,4 @@
-# HDL Parser and Chip Testing Framework
-
-A Python-based tool for parsing Hardware Description Language (HDL) files and automatically testing chip implementations against test vectors.
-
-## Features
-
-- **HDL Parsing**: Parses syntactically correct HDL files to build internal chip models
-- **Chip Simulation**: Simulates chip behavior based on logic gate connections
-- **Automated Testing**: Runs test vectors and verifies outputs against expected results
-- **Built-in Chips**: Supports primitive gates (Nand, Not, And, Or) out of the box
-- **Recursive Parsing**: Automatically loads and parses referenced custom chips
-- **Detailed Reports**: Provides clear pass/fail results for each test case
+# HDL Parser
 
 ## Installation
 
@@ -17,27 +6,12 @@ A Python-based tool for parsing Hardware Description Language (HDL) files and au
 
 ```bash
 git clone https://github.com/yourusername/hdl-parser.git
-cd hdl-parser
-pip install -e .
-```
-
-### Using pip
-
-```bash
-pip install hdl-parser
 ```
 
 ## Quick Start
 
 ### Command Line Usage
 
-```bash
-# Run with module syntax
-python -m hdl_parser <chip.hdl> <test.txt>
-
-# Or use the installed command
-hdl-parser <chip.hdl> <test.txt>
-```
 
 ### Example
 
